@@ -5,15 +5,11 @@
     'summary': "A music player that allows you to search and play your favorite songs",
 
     'author': "Sanjay Sharma",
-
-    # Categories can be used to filter modules in modules listing
-    # Check https://github.com/odoo/odoo/blob/16.0/odoo/addons/base/data/ir_module_category_data.xml
-    # for the full list
     'category': 'Tools',
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base','website'],
+    'depends': ['base'],
 
     # always loaded
     'data': [
@@ -22,6 +18,10 @@
         'views/template.xml',
         'demo/demo.xml',
     ],
+    # the specific reasons for adding app.js to the backend may depend on 
+    # the requirements of the application and the functionality that is being implemented.
+    # i want when the application is loaded, this JavaScript file will be included on the backend.
+
     'assets': {
     'web.assets_backend': [
         'musicSPA/static/src/js/app.js',
@@ -33,7 +33,6 @@
     ],
     
     'installable': True,
-    'auto_install': True,
     'application': True,
     'license': 'OEEL-1',
 }

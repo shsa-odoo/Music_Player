@@ -58,6 +58,11 @@
     <field name="filename">Temp-song-5.mp3</field>
     <field name="album_id" ref="album2"/>
   </record>
+  <record model="music.player" id="song11">
+    <field name="name">Temp-song-6</field>
+    <field name="filename">Temp-song-6.mp3</field>
+    <field name="album_id" ref="album2"/>
+  </record>
 
   </data>
 </odoo>
